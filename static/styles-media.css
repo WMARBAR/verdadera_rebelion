@@ -1,109 +1,108 @@
-/* Tablets y portátiles */
-@media (max-width: 1024px) {
-    .hero-text h1 {
-        font-size: 2.8em;
-    }
+/* styles-media.css */
 
-    .tagline {
-        font-size: 1.2em;
-    }
-
-    .intro p,
-    .benefits ul {
-        font-size: 1em;
-        padding: 0 1.5rem;
-    }
-
-    .cta-button {
-        padding: 0.8em 1.5em;
-        font-size: 1em;
-    }
-
-    .container {
-        padding: 2rem 2rem;
-    }
+/* ── Escritorio grande (ancho >= 1024px) ── */
+@media (min-width: 1024px) {
+  h1.glitch {
+    font-size: 5rem;
+  }
+  .intro-title {
+    font-size: 2.5rem;
+  }
+  .slogan {
+    font-size: 2rem;
+    max-width: 75%;
+  }
+  .subintro {
+    font-size: 1.3rem;
+    max-width: 75%;
+  }
+  .service-card h3 {
+    font-size: 1.8rem;
+  }
+  .cta-button {
+    font-size: 1.4rem;
+    padding: 1.2rem 2.8rem;
+  }
 }
 
-/* Tablets pequeñas y móviles grandes */
-@media (max-width: 768px) {
-    .hero-banner {
-        height: 60vh;
-        padding: 1.5rem;
-    }
-
-    .hero-text h1 {
-        font-size: 2.2em;
-    }
-
-    .tagline {
-        font-size: 1.1em;
-    }
-
-    .container {
-        max-width: 95%;
-        padding: 2rem;
-    }
-
-    .intro p,
-    .benefits ul {
-        padding: 0 2rem;
-    }
-
-    .cta-button {
-        font-size: 0.95em;
-        padding: 0.7em 1.2em;
-    }
-
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: 1em;
-    }
-
-    a:hover {
-        color: #ff0055;
-        text-decoration: underline;
-    }
+/* ── Tablets (ancho entre 768px y 1023px) ── */
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1.glitch {
+    font-size: 4.5rem;
+  }
+  .intro-title {
+    font-size: 2.2rem;
+  }
+  .slogan {
+    font-size: 1.8rem;
+    max-width: 80%;
+  }
+  .subintro {
+    font-size: 1.2rem;
+    max-width: 80%;
+  }
+  .service-card h3 {
+    font-size: 1.6rem;
+  }
+  .cta-button {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+  }
 }
 
-/* Móviles pequeños */
-@media (max-width: 480px) {
-    .hero-banner {
-        height: 50vh;
-        padding: 1.5rem;
-    }
+/* ── Móviles grandes (ancho entre 480px y 767px) ── */
+@media (min-width: 480px) and (max-width: 767px) {
+  h1.glitch {
+    font-size: 3.8rem;
+  }
+  .intro-title {
+    font-size: 2rem;
+  }
+  .slogan {
+    font-size: 1.6rem;
+    max-width: 90%;
+  }
+  .subintro {
+    font-size: 1.15rem;
+    max-width: 90%;
+  }
+  .service-card h3 {
+    font-size: 1.4rem;
+  }
+  .cta-button {
+    font-size: 1.1rem;
+    padding: 0.9rem 2.2rem;
+  }
+}
 
-    .hero-text h1 {
-        font-size: 1.8em;
-    }
-
-    .tagline {
-        font-size: 1em;
-    }
-
-    .intro p,
-    .benefits ul {
-        font-size: 0.95em;
-        padding: 0 1.8rem;
-    }
-
-    .container {
-        padding: 2rem 1.5rem;
-    }
-
-    .cta-button {
-        font-size: 0.9em;
-        padding: 0.6em 1em;
-    }
-
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: 1em;
-    }
-
-    a:hover {
-        color: #ff0055;
-        text-decoration: underline;
-    }
+/* ── Móviles pequeños (ancho < 480px) ── */
+@media (max-width: 479px) {
+  h1.glitch {
+    font-size: 3rem;
+  }
+  .intro-title {
+    font-size: 1.8rem;
+  }
+  .slogan {
+    font-size: 1.4rem;
+    max-width: 95%;
+  }
+  .subintro {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+}
+/* ── Móviles pequeños (ancho < 480px) ── */
+@media (max-width: 479px) {
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
 }

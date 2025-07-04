@@ -4,23 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>La Verdadera Rebelión</title>
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/chiller">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-
 </head>
 <body>
+  <div class="container">
+    <!-- CORRECCIÓN: pasamos filename como keyword argument -->
+    <img src="{{ url_for('static', filename='logo_REV.png') }}"
+         class="logo"
+         alt="Logo La Verdadera Rebelión">
 
-  <h1 class="glitch">La Verdadera Rebelión</h1>
-  <p class="slogan">
-    La verdadera revolución está en tu mente. Aquí cuestionamos todo lo que te han hecho creer;  
-    nuestro objetivo es que dejes de ser el mismo, que vivas una vida propia.  
-    Somos una hermandad y cada mente que despertamos, cada estadística que le quitamos al sistema,  
-    es un éxito para nosotros.
-  </p>
+    <h1 class="glitch">La Verdadera Rebelión</h1>
+
+    <p class="slogan">
+      «Y creó Dios al hombre a su imagen; a imagen de Dios lo creó…»<br>
+      — Génesis 1:27<br><br>
+      Dentro de ti arde una chispa divina, herencia del Creador.<br>
+      Pero te estás sepultando en placeres vacíos:<br>
+      scrolleas en TikTok, te pierdes en Instagram y te ahogas en quejas<br>
+      porque la vida es dura y el mundo es una mierda.<br>
+      ¿Libre? Ja: estás encadenado a la ilusión de una pantalla.<br>
+      Mientras el cosmos palpita y despliega maravillas,<br>
+      tú agonizas en un mar de distracciones.<br>
+      Despierta… o te condenarás a llorar toda tu existencia
+      por nunca haber vivido de verdad.
+    </p>
 
     <div class="cta-buttons">
-    <a href="{{ url_for('nosotros') }}"        class="cta-button">Sobre nosotros</a>
-    <a href="{{ url_for('material_apoyo') }}"  class="cta-button">Material de apoyo</a>
+      <a href="{{ url_for('nosotros') }}"       class="cta-button">Sobre nosotros</a>
+      <a href="{{ url_for('material_apoyo') }}" class="cta-button">Material de apoyo</a>
     </div>
-
+  </div>
 </body>
 </html>

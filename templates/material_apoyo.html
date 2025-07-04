@@ -1,99 +1,55 @@
-<!-- templates/nosotros.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terminos y Condiciones | El Club Invisible</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles-media.css') }}">
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo_xxx.ico') }}">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Verdadera Rebelión</title>
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/chiller">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles-media.css') }}">
 </head>
 <body>
-    <div class="container">
+  <div class="container">
 
-        <p><strong>Bienvenido/a a La fraternidad discreta</strong>, un espacio diseñado para personas reales, que buscan reconectar consigo mismas y avanzar en su proceso de transformación personal.</p>
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='logo_REV.png') }}" class="logo" alt="Logo">
 
-        <p>Antes de utilizar nuestra página web o nuestros servicios, te pedimos que leas atentamente los siguientes Términos y Condiciones, el Aviso Legal y la Política de Privacidad.</p>
+    <!-- Título principal -->
+    <h1 class="glitch">La Verdadera Rebelión</h1>
 
-        <p>Al acceder o hacer uso de este sitio web, declaras haber leído, entendido y aceptado en su totalidad el presente documento.</p>
-
-
-        <h1>NATURALEZA DE LOS SERVICIOS</h1>
-
-        <p><strong>La Fraternidad Discreta</strong> NO presta servicios de terapia psicológica, médica, psiquiátrica ni tratamientos clínicos de ninguna naturaleza.</p>
-
-        <p>Los servicios ofrecidos NO constituyen diagnóstico, tratamiento médico, intervención clínica, ni sustituyen procesos profesionales de salud mental.</p>
-
-        <p>Nuestra labor se basa en el coaching personal, acompañamiento reflexivo y orientación autodidacta, centrada principalmente en rutas de lectura guiadas, autoexploración emocional y escucha activa.</p>
-
-        <p>Los contenidos, rutas, desafíos y reflexiones propuestas tienen fines educativos, introspectivos y motivacionales, basados en estructuras y experiencias de vida propias, sin constituir protocolos clínicos ni terapias formales.</p>
-
-        <h1>QUÉ OFRECEMOS</h1>
-
-        <p>Diseñamos rutas personalizadas de lectura con libros seleccionados que fomentan el autoconocimiento y el crecimiento personal.</p>
-
-        <p>Los libros recomendados son obsequios, sin costo adicional, o puedes adquirirlos por tus propios medios.</p>
-
-        <p><strong>NO</strong> vendemos los libros ni los reproducimos con fines comerciales. Nuestra labor es guiar el proceso de lectura, respetando los derechos de autor.</p>
-
-        <h1>RESPONSABILIDAD DEL CLIENTE</h1>
-        <p>El Cliente accede de manera voluntaria, siendo responsable de sus decisiones y resultados.</p>
-
-        <p>Este espacio <strong>NO</strong> diagnostica ni interviene clínicamente. Se recomienda acudir a profesionales de salud mental si es necesario.</p>
-
-
-        <h1>EXONERACIÓN DE RESPONSABILIDAD</h1>
-        <p>Los resultados dependen del compromiso personal del usuario.</p>
-
-        <p><strong>La Fraternidad Discreta</strong> no garantiza resultados ni se responsabiliza por las consecuencias de la interpretación de los contenidos.</p>
-
-        <p>Finalizadas las sesiones, el proceso es responsabilidad exclusiva del usuario.</p>
-
-
-
-        <h1>CONFIDENCIALIDAD Y PROTECCIÓN DE DATOS</h1>
-        <p>Respetamos la privacidad conforme a la Ley 1581 de 2012 y demás normas aplicables.</p>
-
-        <p>Los datos serán usados exclusivamente para contactarte y gestionar tu participación.</p>
-
-        <p>Tus datos no serán vendidos ni compartidos, salvo requerimiento legal.</p>
-
-
-
-        <h1>DERECHOS DE AUTOR Y PROPIEDAD INTELECTUAL</h1>
-        <p>Los libros recomendados son obras de autores externos protegidas por ley.</p>
-
-        <p><strong>La Fraternidad Discreta</strong> no produce ni vende dichas obras.</p>
-
-        <p>Los audios, textos, metodologías y estructuras propias están protegidas y no pueden ser reproducidas sin autorización.</p>
-
-
-        <h1>ENFOQUE FILOSÓFICO</h1>
-        <p>Nuestro acompañamiento es literario y reflexivo, sin fines religiosos, sectarios ni dogmáticos.</p>
-
-        <p>No solicitamos donaciones, ni prometemos resultados mágicos.</p>
-
-
-        <h1>USO RESPONSABLE</h1>
-        <p>Servicios dirigidos a mayores de edad comprometidos con su proceso.</p>
-
-        <p>Nos reservamos el derecho de admisión ante conductas inapropiadas.</p>
-
-
-
-
-        <h1>MODIFICACIONES</h1>
-        <p><strong>La Fraternidad Discreta</strong> puede modificar estos términos. Las actualizaciones se publicarán en esta sección.</p>
-
-
-
-        <h1>LEGISLACIÓN Y JURISDICCIÓN</h1>
-        <p>Este documento se rige por las leyes de Colombia. Las controversias se resolverán ante jueces colombianos.</p>
-
-
-        <a href="/" class="cta-button">Volver al Inicio</a>
+    <!-- Pregunta inicial -->
+    <h2 class="intro-title">¿Qué estás buscando?</h2>
+    <!-- Texto introductorio -->
+    <p class="subintro">
+      En algún momento de la vida nos hemos sentido desorientados  
+      y apaciguamos esa incertidumbre con un shot de placer inmediato:<br>
+      una comida cargada de azúcar o un vídeo pornográfico.  
+      Pero cuando pasa el atracón, volvemos a ser miserables.<br>
+      Sentirse miserable alimenta este sistema de mierda  
+      que te mantiene luchando para nada.<br>
+      Aquí encontrarás el apoyo que necesitas.
+    </p>
+    <!-- Mosaico de servicios -->
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>¿Estas gordo y sin energía?</h3>
+        <a href="#" class="cta-button">Acceder</a>
+      </div>
+      <div class="service-card">
+        <h3>¿No sabes que hacer con tu vida?</h3>
+        <a href="#" class="cta-button">Acceder</a>
+      </div>
+      <div class="service-card">
+        <h3>¿Perdiste la fé?</h3>
+        <a href="#" class="cta-button">Acceder</a>
+      </div>
     </div>
+
+    <!-- Botones finales -->
+    <div class="cta-buttons">
+      <a href="{{ url_for('home') }}" class="cta-button">Volver al Inicio</a>
+    </div>
+
+  </div>
 </body>
 </html>
