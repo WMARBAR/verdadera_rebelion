@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Verdadera Rebelión</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+
+  <h1 class="glitch">La Verdadera Rebelión</h1>
+  <p class="slogan">
+    La verdadera revolución está en tu mente. Aquí cuestionamos todo lo que te han hecho creer;  
+    nuestro objetivo es que dejes de ser el mismo, que vivas una vida propia.  
+    Somos una hermandad y cada mente que despertamos, cada estadística que le quitamos al sistema,  
+    es un éxito para nosotros.
+  </p>
+
+    <div class="cta-buttons">
+    <a href="{{ url_for('nosotros') }}"        class="cta-button">Sobre nosotros</a>
+    <a href="{{ url_for('material_apoyo') }}"  class="cta-button">Material de apoyo</a>
+    </div>
+
+</body>
+</html>
