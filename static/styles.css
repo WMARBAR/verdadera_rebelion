@@ -218,3 +218,19 @@ h1.glitch {
   h1.glitch{ font-size: 2.3rem; }
   .alert{ font-size: 1.05rem; line-height: 1.35; }
 }
+
+/* ======= Layout exclusivo para la página “Sobre Nosotros” ======= */
+body.nosotros-page{
+  /* Quitamos el flex-centrado global */
+  display:block !important;
+  margin:0;
+}
+
+body.nosotros-page .alert{
+  /* Damos respiro lateral y dejamos que crezca verticalmente */
+  max-width:900px;
+  margin:3rem auto;
+  padding:0 1.5rem 4rem;
+  box-sizing:border-box;
+  text-align:center;
+}
