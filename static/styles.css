@@ -35,13 +35,14 @@ body {
   box-sizing: border-box;
 }
 
-/* ========== Logo ========== */
-.logo {
-  width: 120px;
-  height: auto;
-  margin: 1.5rem auto 0.5rem;
+/* ---------- Logo ---------- */
+.logo{
+  width: 30vw;          /* 30 % del ancho de la ventana */
+  max-width: 140px;     /* …pero nunca mayor a 140 px */
+  height: auto;         /* mantiene la proporción */
+  flex-shrink: 0;       /* evita que el flex lo encoja a cero */
+  margin: 1.2rem 0 0.5rem;
 }
-
 /* ========== “Glitch” title ========== */
 @keyframes glitch {
   0%   { text-shadow:  2px  2px 4px var(--red); }
@@ -168,4 +169,52 @@ h1.glitch {
 .service-card .cta-button {
   padding: 0.7rem 1.2rem;
   font-size: 1rem;
+}
+
+/* asegúrate de que el contenedor sea el “marco” de referencia */
+.container {
+  position: relative;   /* ← clave para posicionar hijos absolutos */
+}
+
+/* flecha roja apuntando a la izquierda */
+.back-arrow{
+  position: absolute;
+  top: 4.5rem;   /* ⬅ antes era 2rem; ahora queda unos 40 px más abajo */
+  left: 2rem;
+  font-size: 3rem;
+  color: #e50914;
+  text-decoration: none;
+  transform: rotate(180deg);
+  transition: transform 0.2s;
+  z-index: 10;
+}
+
+.back-arrow:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+/* Fuente Times New Roman para el texto “subintro” */
+.subintro{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;   /* ajusta si lo deseas */
+  line-height: 1.6;
+}
+/* =========  Fuente “Rock Salt” para el aviso de alerta ========= */
+.alert{
+  font-family: 'Rock Salt', cursive;
+  font-size: 1.8rem;      /* ajusta a tu gusto */
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+@media (max-width:768px){
+  .alert{ font-size:1.4rem; }
+}
+
+@media (max-width: 480px){
+  .container{
+    min-height: auto;   /* deja que crezca según el contenido */
+    padding-top: 1.5rem;
+  }
+  h1.glitch{ font-size: 2.3rem; }
+  .alert{ font-size: 1.05rem; line-height: 1.35; }
 }

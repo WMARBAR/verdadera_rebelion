@@ -106,3 +106,32 @@
     grid-template-columns: 1fr !important;
   }
 }
+/* ==== Corrección definitiva para pantallas pequeñas ==== */
+@media (max-width: 768px){
+  /* 1. Elimina el centrado del BODY en móviles */
+  body{
+    display:block;          /* flujo estándar */
+    align-items: initial;   /* anula flex-align */
+    justify-content: initial;
+  }
+
+  /* 2. Contenedor: deja que crezca todo lo que necesite */
+  .container{
+    display:block;          /* ya no flex vertical */
+    min-height:auto;        /* quita el 100vh que recorta */
+    padding:1.5rem 1rem;    /* un pequeño margen superior */
+  }
+
+  /* 3. Ajustes tipográficos para que quepan en pantalla */
+  h1.glitch{
+    font-size:2.2rem;
+    margin-top:0;
+  }
+  h2.glitch{
+    font-size:1.3rem;
+  }
+  .subintro{
+    font-size:1rem;
+    line-height:1.4;
+  }
+}

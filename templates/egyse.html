@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Estás gordo y sin energía?</title>
+
+  <!-- Fuente y estilos globales que ya usas -->
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/chiller">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/chiller">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles-media.css') }}">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='ico_REV.ico') }}">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Logo compartido -->
+    <img src="{{ url_for('static', filename='logo_REV.png') }}" class="logo" alt="Logo">
+
+    <!-- Flecha roja que apunta a la izquierda -->
+    <a href="{{ url_for('material_apoyo') }}" class="back-arrow" aria-label="Ir a material de apoyo">➔</a>
+
+
+    <!-- Título principal de la sección -->
+    <h1 class="glitch">¿Estás gordo y sin energía?</h1>
+
+    <!-- Llamada de alerta -->
+    <h2 class="alert">
+      Al sistema le encanta verte gordo, inservible y tragón.<br>
+      ¡Hora de rebelarte!
+    </h2>
+
+    <!-- Contenido o pasos iniciales -->
+    <p class="subintro">
+      Para romper de verdad el ciclo de azúcar, sedentarismo y cansancio que te
+      tiene encadenado necesitas algo más que fuerza de voluntad: necesitas
+      conocimiento. Sumérgete en la lectura, caminante; cada página es un
+      maestro silencioso que revela cómo funciona tu cuerpo y por qué el
+      sistema prefiere que lo ignores. Lee, cuestiona y aplica: la tinta
+      transformada en ideas será tu herramienta más poderosa de liberación.
+    </p>
+
+
+
+    <!-- Botón para regresar o explorar más -->
+    <div class="cta-buttons">
+      <a href="{{ url_for('home') }}" class="cta-button">Volver al Inicio</a>
+    </div>
+
+  </div>
+</body>
+</html>

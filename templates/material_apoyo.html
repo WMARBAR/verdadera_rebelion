@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>La Verdadera Rebelión</title>
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/chiller">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles-media.css') }}">
   <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='ico_REV.ico') }}">
@@ -12,15 +13,14 @@
 </head>
 <body>
   <div class="container">
-
-    <!-- Logo -->
+    <!-- Logo compartido -->
     <img src="{{ url_for('static', filename='logo_REV.png') }}" class="logo" alt="Logo">
-
+    
     <!-- Título principal -->
     <h1 class="glitch">La Verdadera Rebelión</h1>
 
     <!-- Pregunta inicial -->
-    <h2 class="intro-title">¿Qué estás buscando?</h2>
+    <h2 class="alert">¿Qué estás buscando?</h2>
     <!-- Texto introductorio -->
     <p class="subintro">
       En algún momento de la vida nos hemos sentido desorientados  
@@ -35,15 +35,15 @@
     <div class="services-grid">
       <div class="service-card">
         <h3>¿Estas gordo y sin energía?</h3>
-        <a href="#" class="cta-button">Acceder</a>
+         <a href="{{ url_for('egyse') }}" class="cta-button">Acceder</a>
       </div>
       <div class="service-card">
         <h3>¿No sabes que hacer con tu vida?</h3>
-        <a href="#" class="cta-button">Acceder</a>
+         <a href="{{ url_for('nsqctv') }}" class="cta-button">Acceder</a>
       </div>
       <div class="service-card">
         <h3>¿Perdiste la fé?</h3>
-        <a href="#" class="cta-button">Acceder</a>
+        <a href="{{ url_for('plf') }}" class="cta-button">Acceder</a>
       </div>
     </div>
 
