@@ -135,3 +135,20 @@
     line-height:1.4;
   }
 }
+@media (max-width: 767px) {
+  .temas-wrap {
+    margin: 20px 16px 0;
+    width: auto;
+    max-height: 52vh;
+    padding: 12px;
+  }
+
+  .btn-tema {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+
+  .cta-bottom {
+    margin-top: 28px;
+  }
+}

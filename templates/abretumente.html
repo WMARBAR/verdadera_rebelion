@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abre tu mente | La Verdadera Rebelión</title>
+
+  <!-- Fuentes -->
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/chiller">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles-media.css') }}">
+
+  <!-- Íconos -->
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='ico_REV.ico') }}">
+</head>
+
+<body class="nosotros-page">
+
+  <!-- Flecha de regreso -->
+  <a href="{{ url_for('home') }}" class="back-arrow" aria-label="Volver al inicio">➔</a>
+
+  <div class="alert">
+    <h1>¡Abre tu mente!</h1>
+
+  <!-- Caja combinada: botones a la izquierda y texto a la derecha -->
+  <div class="contenedor-dual">
+    <!-- Lado izquierdo: botones -->
+    <div class="temas-wrap">
+      <div class="botones-temas">
+        <a href="#" class="btn-tema">1. Esclavitud Digital: Te tienen agarrado del alma, idiota</a>
+        <a href="#" class="btn-tema">2. El dulce veneno: Traga mierda y llama eso comida</a>
+        <a href="#" class="btn-tema">3. El Dios Consumo: Te arrodillas, gastas y te pudres</a>
+        <a href="#" class="btn-tema">4. La desconexión interior: Te amputaste el alma y ni lo notaste</a>
+        <a href="#" class="btn-tema">5. Medios de Manipulación Masiva: Te follan el cerebro con palabras bonitas</a>
+        <a href="#" class="btn-tema">6. La Obesidad Mental y Física: Traga, habla y muere</a>
+        <a href="#" class="btn-tema">7. Pornografía: La nueva droga del idiota moderno</a>
+        <a href="#" class="btn-tema">8. El idiota que cree merecer amor: Gordo, torpe e hipócrita</a>
+        <a href="#" class="btn-tema">9. Princesa de Instagram: Te jodes por elegir como mierda</a>
+        <a href="#" class="btn-tema">10. Machitos de Mierda: Hombres que se arrastran por su propia estupidez</a>
+        <a href="#" class="btn-tema">11. Relaciones de pareja: Te enamoras del que te folla, no del que te cuida</a>
+      </div>
+    </div>
+
+    <!-- Lado derecho: contenido del texto -->
+    <div class="texto-tema-wrap">
+      <p id="contenido-tema">Haz clic en un tema para leer</p>
+    </div>
+
+  </div>
+
+    <!-- Botón volver abajo -->
+    <div class="cta-buttons">
+      <a href="{{ url_for('home') }}" class="cta-button">Volver al Inicio</a>
+    </div>
+  </div>
+
+
+  
+</body>
+<script>
+  const botones = document.querySelectorAll('.btn-tema');
+  const contenido = document.getElementById('contenido-tema');
+
+  const textos = {
+    0:`¿Te crees libre porque tienes Wi-Fi? No eres libre, eres un esclavo con plan de datos. Cada vez que desbloqueas el celular, le entregas un pedazo de tu conciencia a un algoritmo que te conoce mejor que tu madre. Cada clic que haces es un “sí, por favor, manipúlenme más”. Te tienen bien cogido, y con gusto.
+
+    No estás navegando por internet. Internet navega por ti. Eres una marioneta de dopamina. Te explotan los ojos en pantalla, la espalda en la silla, y el alma en la nube... pero ni cuenta te das. Publicas todo, expones todo, entregas todo, y todavía preguntas por qué estás vacío.
+
+    Eres un ratón de laboratorio moderno. Miras reels como si te fuera la vida en eso. Te crees rebelde porque hiciste un comentario hater en TikTok. No produces nada, no piensas nada, solo consumes basura digital y la regurgitas como buen zombie funcional.
+
+    Te están follando el alma con una sonrisa, y tú agradeces. ¿Quieres saber si estás jodido? Apaga el celular por un día. Si no aguantas, ya eres propiedad del sistema. Eres un cuerpo con dedos, no con cerebro. Te entretienen para que no pienses. Te estimulan para que no sientas. Te saturan para que no despiertes.
+
+    Despierta: Cada vez que abres Instagram sin propósito, pierdes una oportunidad de existir. Cada vez que ves porno en lugar de tocar tu vida, te hundes. Cada vez que compartes un meme para no enfrentar tu vacío, lo estás agrandando. No es entretenimiento: es adicción digital con sabor a anestesia emocional.
+
+    ¿La verdad? Si no apagas, no piensas. Y si no piensas... no eres más que otro pedazo de carne con Wi-Fi.
+
+    Despierta: Si una app es gratis, tú eres el producto. Pregúntate quién diseña tus impulsos, tu deseo, tu moral. Spoiler: no eres tú.`,
+
+    1: `¿Azúcar? Más adictiva que la cocaína, pero legal, bonita y servida con sonrisa. 
+    
+    ¿Comida? No jodas. Son productos comestibles hechos por psicópatas con bata y Excel. No te alimentan, te entrenan. Te vuelves un cerdo obediente con papilas anestesiadas. 
+    
+    ¿Tú crees que eliges lo que comes? Iluso. Te programaron desde niño. Tu paladar no es tuyo: lo diseñaron entre comerciales de cereales y loncheras llenas de mierda colorida. 
+    
+    Comes lo que viste comer, lo que viste en la tele, lo que te vendieron como “felicidad con sabor”. Tragas pan industrial, bebidas cancerígenas con burbujas, galletas que duran siete años sin pudrirse. Y después te preguntas por qué te duele todo, por qué estás inflado como sapo, por qué no tienes energía ni para coger un libro. 
+    
+    Despierta: cada vez que compras un ultraprocesado estás financiando tu propia ruina. Estás votando por la enfermedad, por la apatía, por la pereza mental. 
+    
+    Comer como mierda no es solo ignorancia: es un acto de esclavitud voluntaria. Y lo peor: lo sabes. Pero sigues. Porque eres adicto. Porque es fácil. Porque eres débil. ¿Hasta cuándo vas a permitir que tu cuerpo sea un basurero químico? ¿Hasta que no se te pare? ¿Hasta que te saquen en silla de ruedas con una Coca-Cola en la mano? ¿Hasta que la ansiedad te explote por dentro mientras tragas un combo agrandado de autodesprecio? Tu cuerpo no es un templo, es un campo de batalla. Y lo estás perdiendo por gula, por flojera y por idiotez industrializada.`,
+
+    2: `No vives. Solo compras. Tu religión es el descuento, tu templo es el centro comercial, y tu dios es el nuevo modelo de mierda que salió esta semana. Te excitas más viendo el carrito de compras lleno que mirando dentro de tu alma vacía.
+
+    ¿Felicidad? No. Dopamina barata con envío exprés. ¿Autoestima? La compras con tarjeta de crédito en cuotas. ¿Identidad? Un combo de marcas, loguitos y frases en inglés que ni entiendes. Te defines por lo que tienes, no por lo que eres. Porque ser te cuesta, y pensar te da miedo.
+
+    La tristeza viene en cajas de cartón con logos premium. Pero sigues. Sigues llenando tu casa de objetos mientras tu corazón se vuelve trastero. Tu alma está hipotecada con cada compra impulsiva que haces para llenar silencios internos que ni sabes nombrar.
+
+    ¿Sabes por qué no paras? Porque si te detienes, te das cuenta que estás solo, roto y anestesiado. Así que mejor compras: una chaqueta nueva, un celular más, un viaje para mostrar. Una vida de mentira para no mirar la tuya de verdad.
+
+    Despierta: Tu libertad no tiene código QR. Si no puedes estar solo sin una pantalla ni una compra pendiente, no eres humano: eres ganado obediente del sistema. Te venden “estilo de vida” mientras te compran la vida real.
+
+    Cada vez que compras para escapar de ti, estás firmando un contrato con tu propia decadencia. Y sí, lo firmaste con PayPal.`,
+
+
+    3: `Tienes todo... menos a ti. Te convertiste en un avatar con buen internet. Tu alma está en coma y ni te diste cuenta. Vives en piloto automático, con dopamina de saldo y ansiedad de rutina. Corres, hablas, respondes, publicas, pero no existes. ¿Cuándo fue la última vez que estuviste contigo sin querer escapar?
+
+      Te aterra el silencio porque ahí vive tu verdad. Y tu verdad apesta: eres un desconocido dentro de tu propio cuerpo. ¿Espiritualidad? Le llamas así a prender velitas caras y comprar cristales inútiles mientras sigues siendo un desastre por dentro. No te limpias: te maquillas con frases de autoayuda.
+
+      Eres una marioneta que reza mantras mientras se hunde. Tu “conexión” es puro Wi-Fi, pero adentro estás en modo avión. Te quejas de estar roto, pero no paras de romperte tú solo. Buscas paz en Amazon, plenitud en likes y sentido en podcasts de pseudoiluminados. ¿Y tu espíritu? Atado, amordazado y enterrado bajo capas de ruido.
+
+      Despierta: o te metes dentro, o el sistema te seguirá llenando de basura hasta que no quede espacio para ti. El vacío no se ignora: se conquista. Si no lo habitas tú, lo ocupan ellos. El alma no se subcontrata, se trabaja. No estás cansado, estás desconectado. Y si no te enciendes por dentro, te consumirás por fuera.`,
+    
+    4: `No te informan. Te programan. Cada noticiero es una fábrica de obediencia. No muestran la verdad, la moldean para que encaje con lo que les conviene. Las guerras no son tragedias: son negocios bien narrados. Los titulares son cebos disfrazados de urgencia. Y tú, abres la boca y tragas.
+
+      ¿Te crees rebelde porque compartes hilos de Twitter? ¿Porque sigues a dos “periodistas independientes”? Patético. Solo eres un eco. Un repetidor barato. Tus “ideas” las vomitó otro y tú las masticaste sin pensar. No tienes criterio: tienes consumo disfrazado de conciencia.
+
+      Despierta: si no piensas por ti, alguien lo hará por ti. Y no será para liberarte, sino para usarte. ¿No te das cuenta? Si tu mente se tambalea sin red, no eres libre: eres propiedad intelectual del sistema. O aprendes a pensar, o te seguirán metiendo ideas por el culo con guante de terciopelo. Tú eliges: ¿vas a abrir los ojos o a seguir aplaudiendo mientras te manipulan?`,
+    
+    5: `¿Te ofende que te digan gordo? ¿Y no te ofende estarlo? ¿No te ofende haberle entregado tu cuerpo a una industria que te engorda como a un cerdo en víspera de matadero? Comer como un animal y después quejarse de la salud es como mear en el fuego y llorar por el humo. No es gordofobia, es realidad. Te estás matando lento y encima aplaudes.
+
+      ¿Y la mente? Igual de inflada. Hablamos demasiado, pensamos poco. Opinas de todo, sabes de nada. Has leído más titulares que libros, tragado más memes que ideas. Eres un eco, no una voz. Si hablar adelgazara, habría menos obesos y más sabios.
+
+      Despierta: cállate un mes y escucha. Ayuna un día y siente. Muévete, respira, deja de ser un esclavo de tus impulsos. Si tu cuerpo es un templo, el tuyo parece una sucursal de comida rápida.`,
+
+    6: `Mírate: escondido, con la bragueta abajo, viendo cómo otros cogen mientras tú te marchitas. La industria porno te tiene bien cogido… pero del alma. Cada paja es una rendición. Cada vídeo que ves te desconecta más de lo real, de lo sagrado, de lo humano.
+
+      ¿Y sabes qué es peor? Que lo sabes. Sabes que te vacía, que te hace débil, que te convierte en un observador pasivo de la vida. Pero vuelves. Como buen adicto.
+
+      Despierta: ¿qué clase de hombre necesita una pantalla para sentirse vivo? ¿qué clase de mujer normaliza que su pareja se excite con otras? Esto no es libertad sexual. Es esclavitud disfrazada de placer. El porno no libera: castra.`,
+
+    7: `¿De verdad crees que una mujer valiosa va a enamorarse de ti porque le dijiste “buenos días, hermosa”? ¿Porque le dedicaste una canción cursi o escribiste un poema copiado de internet mientras masticas papas frente al computador con el pantalón manchado de grasa? No te bañas bien, no hueles bien, no sabes hablar. Eres torpe con tus palabras y peor con tus acciones. Vives pidiendo amor cuando no te amas ni tú. Y cuando no te sale, te vas donde las putas como si el cuerpo comprado pudiera tapar el alma rota.
+
+      Eso no es pasión, es miseria emocional con olor a semen rancio y frustración guardada. ¿Intensidad? No, eres pegajoso como un chicle pisado. ¿Detalles? No, asfixias. Quieres afecto sin darte el trabajo de merecerlo. Exiges dulzura mientras comes como cerdo y hablas como un niño herido. Te repites que eres “bueno” mientras ves porno y stalkeas mujeres que jamás se fijarán en ti. ¿Amor? Tú solo quieres validación.
+
+      Despierta: El amor no es premio de consolación para hombres que no se cultivan. Si no te amas, lo que das no es amor: es una bomba emocional con moño.`,
+
+    8: `Te crees una diosa, pero no pasas de ser una copia con filtros. Cuentas likes, pero no libros. Tomas fotos del culo, pero no miras dentro de tu alma. Quieres un “hombre de verdad”, pero solo te mojas por idiotas tatuados con el IQ de una piedra. Te atrae lo que brilla, aunque esté podrido.
+
+      Te enamoras del narcisista que te responde cada tres días con un “qué haces” a las 2 a.m., pero ignoras al que te escucha. Y cuando te rompen el corazón por décima vez, te pintas las uñas y posteas frases tipo “yo merezco lo mejor”, mientras lloras viendo Netflix comiendo helado de chocolate industrial como si fuera medicina emocional.
+
+      Pero tú también mientes: vas de “intensa pero sensible”, de “chica única”, y resultas ser igual que todas. Gritas “no quiero sexo casual”, pero te acuestas con el primero que te hace reír. Luego te quejas porque nadie “quiere algo serio”. ¿En serio?
+
+      Despierta: Si todo lo que das es cuerpo, no esperes que te amen el alma. Si solo buscas emoción y validación, no pidas profundidad. Deja de culpar al patriarcado por tu incapacidad de elegir bien. No es que no haya hombres buenos: es que tú no los ves desde tu pedestal de autoestima inflada y realidad amputada.
+
+      Y sí, tú también vas donde los “putos”: solo que a ti te gustan con barba, voz grave y cero neuronas.
+
+      LA CARNE MAL TAPADA SOLO TRAE MOSCAS. Si tu “amor propio” consiste en enseñar media teta y medio culo para rascar corazones rotos con reacciones digitales, no llores cuando lo único que atraes son insectos con erección. No podrías traer un buen hombre si no sabes diferenciar entre atención y respeto, entre deseo y compromiso, entre ser deseada y ser amada.
+
+      Si no cultivas dignidad, te consumirán como comida rápida emocional. Porque cuando vendes tu imagen, no compras amor: compras soledad con aplausos hipócritas.`,
+
+    9: `¿Sabes qué caga todo? No que seas pobre, ni que vengas de abajo. Lo que te destruye es ser un bruto con orgullo. No estudias, no lees, no aprendes, pero hablas como si fueras Sócrates con gorra. Te sabes todos los nombres de jugadores, pero no tienes ni puta idea de cómo llenar un formulario de empleo. Y aún así, te sientes con derecho a opinar de todo. Opinólogo de esquina. Campeón mundial en hablar mierda.
+
+      Tu boca produce más flatulencias que ideas. Hablas de “mujeres interesadas” pero ni tú te mantienes. Te quejas de que no te respetan, pero no respetas ni tu cuerpo, ni tu tiempo, ni a tu madre. Cagas donde comes, duermes donde lloras, y aún así crees que eres “un hombre de verdad”.
+
+      ¿Hombre? Eres un niño grande con barba y deudas. No estudias porque “eso no sirve pa’ nada”, pero no sirves ni para ti mismo. Criticas a los que se esfuerzan, mientras tú te tiras en el sillón a ver TikTok con el pantalón manchado de sudor y fracaso.
+
+      Despierta: no eres víctima del sistema: eres cómplice de tu mediocridad. No lees, no entrenas, no meditas, no mejoras. Solo hablas mierda y te tocas los huevos.
+
+      Y todavía tienes la cara de pedir una mujer que “valga la pena”. ¿Tú vales la pena? ¿Qué tienes que ofrecer aparte de tus quejas y tus excusas? Tienes el ego de un emperador y el intelecto de un mueble viejo.
+
+      La verdad: no hay revolución sin hombres que se levanten del sofá. No hay respeto para el que no se respeta. Y no hay futuro para quien solo mira hacia atrás mientras echa la culpa.`,
+
+    10: `¿Quieres saber por qué fracasas tanto en el amor? Porque no amas: te calientas. Confundes una verga dura con un corazón honesto. O un par de tetas firmes con una mente inestable. Te derrites con palabras bonitas de un idiota que ni sabe escribir “responsabilidad afectiva”, o con una mujer que te dice “te extraño” mientras te usa para llenar tu vacío. Ignoras a quien sí te escucha, te entiende, te respeta. A ese o esa que no hace ruido, pero sí presencia. Tienes cerca a alguien que te valora, que te quiere de verdad, pero le das la espalda porque no te genera el drama que adoras. Prefieres al tóxico, al que te hace llorar, al que desaparece dos días y vuelve oliendo a sexo ajeno. O a la loca que hoy te ama y mañana te bloquea, que te busca cuando está sola pero te olvida cuando otro le habla bonito. Porque en tu mente confundida, intensidad es amor. Qué jodido.
+
+      Te enamoras del que te escribe “bebé” y “amor” a las 2 a.m. mientras se la mete a otra, o al gordo con billete que se cree atractivo porque puede pagar por atención, aunque le huela el pito a desidia emocional. ¿Y tú? Abres las piernas y cierras los ojos. Porque crees que ser deseada es lo mismo que ser amada. Spoiler: no lo es.
+
+      Y tú, hombre, te enamoras de la que te pone el culo en la cara y te dice “papi” mientras se graba para otros diez. De la que parece un regalo pero por dentro está vacía. De la que te excita pero no te sostiene. ¿Y tú qué haces? Sacas pecho, presumes, te la follas, y luego lloras cuando te das cuenta que no te quería, solo te usaba para escapar de sí misma.
+
+      ¿Y los que valen la pena? Los mandas a la zona de “amig@s”. Los mandas al “eres muy buen@, pero no me gustas así”. Porque no te hacen sufrir, porque no te dan celos, porque te dan paz. Y como no sabes lo que es estar bien, huyes. Te asusta la estabilidad porque creciste creyendo que el amor duele. No, idiota. El amor no duele. Lo que duele es estar pegado al que no te quiere.
+
+      ¿Y luego lloran? ¿Se quejan? ¿Se hacen las víctimas? No. Responsabilícense. Si siguen escogiendo al más ruidoso, al más intenso, al más falso, no se quejen si terminan vacíos. Si eligen la carne sin alma, el cuerpo sin valores, el sexo sin propósito… no pidan luego amor de verdad.
+
+      Te asusta la mujer que estudia, trabaja, se cuida, está buena, y además tiene cerebro. Porque tú, acostumbrado a recoger sobras emocionales, no sabes qué hacer con alguien completo. Igual tú, mujer, no sabes cómo tratar al hombre que se levanta temprano, entrena, lee, trabaja duro, tiene metas y no quiere perder su tiempo con juegos emocionales. Te parece raro. Y sí: es raro. Porque tú estás más cómoda con el que parece “interesante” pero no vale un culo.
+
+      Ambos fallan. Él quiere una mujer que lo entienda, pero solo se fija en la que lo calienta. Ella quiere un hombre que la cuide, pero solo elige al que la hiere. Y luego se quejan del amor, cuando lo único que hacen es coleccionar cuerpos y rechazar almas.
+
+      El amor real no es perfecto, pero tampoco es mierda. No está en los que prometen el cielo y te dejan en el infierno. Está en los actos pequeños, constantes, honestos. Pero para ver eso, tienes que dejar de actuar como un adicto al deseo y convertirte en alguien digno de amar.`,
+            
+
+    };
+
+
+
+
+  botones.forEach((btn, index) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      contenido.textContent = textos[index] || "Sin contenido aún";
+    });
+  });
+</script>
+
+</html>

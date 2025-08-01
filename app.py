@@ -32,6 +32,11 @@ def plf():
     # “gordo y sin energía”  → e.g.  /plf
     return render_template("plf.html")
 
+@app.route("/abretumente")
+def abretumente():
+    # “gordo y sin energía”  → e.g.  /abretumente
+    return render_template("abretumente.html")
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
