@@ -152,3 +152,157 @@
     margin-top: 28px;
   }
 }
+/* styles-media.css */
+
+/* ───────── Desktop (≥1024px) ───────── */
+@media screen and (min-width: 1024px) {
+  h1.glitch {
+    font-size: 5rem;
+  }
+  .alert {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .contenedor-dual {
+    gap: 60px;
+    padding: 0 2rem;
+  }
+  .temas-wrap {
+    width: 35%;
+    max-height: 70vh;
+    padding: 24px;
+  }
+  .texto-tema-wrap {
+    width: 55%;
+    padding: 24px;
+  }
+  .btn-tema {
+    font-size: 1.1rem;
+    padding: 14px 24px;
+  }
+}
+
+/* ───────── Tablet (768px–1023px) ───────── */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h1.glitch {
+    font-size: 4rem;
+  }
+  .alert {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .contenedor-dual {
+    gap: 40px;
+    padding: 0 1.5rem;
+    flex-wrap: wrap;
+  }
+  .temas-wrap,
+  .texto-tema-wrap {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto 2rem;
+  }
+  .btn-tema {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
+
+/* ───────── Mobile (≤767px) ───────── */
+@media screen and (max-width: 767px) {
+  h1.glitch {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .alert {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .contenedor-dual {
+    display: block;
+    padding: 0 1rem;
+  }
+  .temas-wrap,
+  .texto-tema-wrap {
+    width: 100%;
+    max-height: 50vh;
+    padding: 16px;
+    margin-bottom: 1.5rem;
+  }
+  .btn-tema {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+/* ==============================
+   Ajustes móviles para “Abre tu mente”
+   ============================== */
+@media screen and (max-width: 767px) {
+  /* 1) Flecha más arriba y pequeña */
+  .back-arrow {
+    top: 0.75rem;
+    left: 0.75rem;
+    font-size: 2rem;
+  }
+
+  /* 2) Título más pequeño y separado de la flecha */
+  h1.glitch {
+    font-size: 2rem;
+    margin: 2.5rem auto 1rem; /* empuja el título hacia abajo */
+    max-width: 90%;
+  }
+
+  /* 3) Contenedor vertical en lugar de lado a lado */
+  .contenedor-dual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    margin-top: 0; /* ya lo separó el título */
+  }
+
+  /* 4) Caja de botones arriba, centrada y estrecha */
+  .temas-wrap {
+    width: 90%;
+    max-width: 400px;
+    max-height: 45vh;
+    margin: 0 auto;
+  }
+
+  /* 5) Caja de texto abajo, centrada y estrecha */
+  .texto-tema-wrap {
+    width: 90%;
+    max-width: 400px;
+    max-height: 50vh;
+    margin: 0 auto 2rem;
+  }
+
+  /* 6) Ajusta botón “Volver” si lo hubiera */
+  .cta-buttons {
+    margin-top: 1rem;
+  }
+}
+/* ── Ensanchar cajas de scroll ── */
+body.nosotros-page .temas-wrap,
+body.nosotros-page .texto-tema-wrap {
+  /* usa casi todo el ancho disponible */
+  width: 95%;
+  max-width: none;
+}
+
+/* Para pantallas grandes vuelve a porcentajes más equilibrados */
+@media screen and (min-width: 1024px) {
+  body.nosotros-page .temas-wrap {
+    width: 40%;    /* un poco más ancha que antes (era 35%) */
+    max-width: 600px;
+  }
+  body.nosotros-page .texto-tema-wrap {
+    width: 55%;    /* mantiene el balance con el 40% anterior */
+    max-width: 800px;
+  }
+}
